@@ -17,8 +17,4 @@ function iplug_js_css() {
 // page options
 require_once $devDir . '/iplug-options.php';
 
-// hide wordpress version
-require_once $devDir . '/hide-wordpress-version.php';
 
-// disable xmlrpc
-require_once $devDir . '/disable-xmlrpc.php';

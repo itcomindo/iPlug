@@ -23,7 +23,7 @@ function iplug_options_page() {
         // checkbox remove wordpress version option
         Field::make('checkbox', 'iplug_remove_wp_version', 'Remove Wordpress Version'),
         // checkbox remove wordpress version option
-        Field::make('checkbox', 'iplug_remove_wp_version', 'Remove Wordpress Version'),
+        Field::make('checkbox', 'iplug_remove_thewp_version', 'Remove Wordpress Version'),
 
 
     ]);
@@ -90,8 +90,8 @@ function iplug_remove_xmlrpc() {
 add_action('wp', 'iplug_remove_xmlrpc');
 
 // remove wordpress version
-function iplug_remove_wp_version() {
-    $option = carbon_get_theme_option('iplug_remove_wp_version');
+function iplug_remove_thewp_version() {
+    $option = carbon_get_theme_option('iplug_remove_thewp_version');
     if ($option) {
         add_filter('the_generator', '__return_empty_string');
     }
